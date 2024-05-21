@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- untuk penghubung file css -->
+    <title>BIODATA DIRI</title>
+</head>
+
+<body>
+    <!-- <header>
+        <h1 style="font-family: poppins;">BIODATA DIRI</h1>
+        <details>
+            <summary>Change Color</summary>
+            <fieldset>
+                <legend>Change color</legend>
+                <input class="gantiwarna" onclick="changeColor()" type="button" value="Oranye" >
+                <input class="gantiwarna2" type="button" value="Coklat" >
+            </fieldset>
+        </details>
+    </header> -->
+    
+    <div id="navbar">
+            <ul>
+                <li class="navbar1"><a href="#top" >Profile</a></li>
+                <li class="navbar1"><a href="#portofolio">Portfolio</a></li>
+                <li class="navbar1"><a href="#pengalaman">Experience</a></li>
+                <li class="navbar1"><a href="#prestasi">Achievement</a></li>
+                <li class="navbar1"><a href="#kontak">Contact</a></li>
+            </ul>
+    </div> 
+    
+    <div class="biodata" style="margin-top: 3em;">
+        <img  class="element3" src="img/1675849606536-crop.jpg" alt="foto sendiri"/>
+        <div class="element2">
+            <h2 class="element4" style="font-family: poppins; text-align: left; font-size: small; font-weight: normal;">
+                Halo, perkenalkan saya
+            </h2>
+            <h2  class="element4" style="font-family: poppins; text-align: left; font-size: 36px;">
+                Resandy <br>
+            </h2>
+            <h2 class="element4" style="font-family: poppins; text-align: left; text-indent: 75px; font-size: 36px; padding-bottom: 10px; border-bottom: solid 3px green;">
+                Prisadana
+            </h2> <br>
+            <p style="font-family: montserrat;text-align: justify;text-indent: 45px; line-height: 1.5;">
+                Saya adalah seorang mahasiswa semester tiga <b>Teknologi Informasi Universitas Udayana</b>. Saya lahir di Jember, 5 April 2004 tetapi sekarang sudah berdomisili di Gianyar. Saya memiliki ketertarikan dibidang multimedia
+                seperti <b>fotografi</b>, <b>videografi</b> dan <b>desain digital</b>. Saya juga terkadang mengambil <i>freelance</i> sebagai fotografer dan videografer.
+            </p>
+            <!-- <div>
+                <a href="form.html" class="buttonportfolio4">Hire Me</a>
+            </div> -->
+        </div>
+    </div>
+
+    <div id="portofolio" class="biodata1">
+        <h2 style="font-family: poppins; text-align: center; margin-top: 1em;">Portfolio</h2>
+        <div>
+            <button onclick="hideShow()" class="buttonportfolio">Photography</button>
+            <button onclick="hideShow()" class="buttonportfolio">Videography</button>
+            <button onclick="hideShow()" class="buttonportfolio">Design</a></button>
+        </div>
+        
+        <div>
+            <div id="fotoportofolio">
+                <div class="element11">
+                    <div class="element13" >
+                            <img class="img1" src="img/foto pasar.jpg" alt="pasar Gianyar" style="width: 360px; margin: 15px 15px 15px 0;border-radius: 15px;"/>
+                            <img class="img2" src="img/foto basket.jpg" alt="main basket" style="width: 360px;margin: 15px 15px 15px 0;border-radius: 15px; display: none;"/>
+                            <img class="img3" src="img/foto pesawat.jpg  " alt="pesawat" style="width: 360px;margin: 15px 15px 15px 0;border-radius: 15px; display: none;"/>
+                        <div>
+                            <button onclick="hideShow()" class="buttonportfoliophoto"></button>
+                            <button onclick="hideShow()" class="buttonportfoliophoto"></button>
+                            <button onclick="hideShow()" class="buttonportfoliophoto"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="element12">
+                            Saya sudah mulai menggeluti dunia fotografi saat di SMP dan <br> lebih mengasah kemampuan fotografi lagi saat mulai SMA <br>
+                            dan mengikuti ekstrakurikuler fotografi bernama Dosman Photographer Team <br> dan saat kuliah dengan mengikuti Udaya Focus.
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/1rMzlUbcLUSBdKXE-vi4nJG_dcPSy0ECB" class="buttonportfolio2">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="videoportofolio" style="margin-top: 1em; margin-bottom: 1em; display: none;">
+                <div class="element11">
+                    <div class="element12" style="margin-right: 1em;">
+                        <p style="font-family: montserrat; line-height: 1.5; text-align: right; ">
+                            Saya sudah mulai menggeluti dunia videografi saat di SMP <br> dan lebih mengasah kemampuan fotografi lagi saat mulai SMA <br>
+                            dan mengikuti ekstrakurikuler fotografi bernama <br> Dosman Photographer Team dan saat kuliah dengan mengikuti Udaya Focus, <br>
+                            berikut salah satu <i>behind the scene</i> saat membuat video.<br>
+                        </p>
+                    </div>
+                    <figure class="element13" style="display: inline-block; margin-top: 1em;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ohWn_B4M1QQ?si=69TzpxmnUGi5isL2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <!-- <video controls="true"  width="360" style="display: flex-start;">
+                            <source src="vid/Batuan Egg Painting BTS.mp4"/>
+                        </video> -->
+                    </figure>
+                </div>
+            </div>
+            
+            <div id="desainportofolio" style="margin-top: 1em; display: none;">
+                <div class="element11">
+                    <div class="element13">
+                            <img class="img4" src="img/PAMFLET OPREC VOLUNTEER.jpg" alt="oprec volunteer" style="width: 200px; margin: 15px 15px 15px 0;border-radius: 8px;"/>
+                            <img class="img5" src="img/PAMFLET PO KEMEJA ENDEK-2.jpg" alt="po kemeja" style="width: 200px;margin: 15px 15px 15px 0;border-radius: 8px; display: none;"/>
+                            <img class="img6" src="img/PAMFLET DONASI 2023-2-2.jpg" alt="open donasi" style="width: 200px;margin: 15px 15px 15px 0;border-radius: 8px; display: none;"/>
+                        <div>
+                            <button onclick="hideShow()" class="buttonportfoliophoto"></button>
+                            <button onclick="hideShow()" class="buttonportfoliophoto"></button>
+                            <button onclick="hideShow()" class="buttonportfoliophoto"></button>
+                        </div>
+                    </div>
+                <div class="element12">
+                    <p style="font-family: montserrat; line-height: 1.5;">
+                        Saya mulai menggeluti dunia desain saat di SMA <br> dan lebih mengasah kemampuan desain saat di bangku perkuliahan <br>
+                        dengan mengikuti organisasi Himpunan Mahasiswa Teknologi Informasi <br> dan kepanitian yang ada di lingkungan Teknologi Informasi, <br>
+                        berikut beberapa hasil desain saya saat mengikuti kegiatan BAKSOS TI 2023:
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="pengalaman">
+        <h2 style="font-family: poppins;border-bottom: solid 2px green; text-align: left; padding-left: 1em;padding-bottom: 0.2 em; margin-top: 1.5em;">Commite and Organizational Experience</h2>
+        <div style="display: flex; margin-top: 2em; margin-bottom: 2em;">
+            <div class="element6">
+                <img class="element5" src="./img/camera icon.png" alt="logo kamera">
+                <div>
+                    <p class="element7" style="font-family: poppins; font-size: 1.2em; font-weight: 600;padding-top: 0.3em;">
+                        Publikasi Dan Dokumentasi
+                    </p>
+                    <p class="element7" style="font-family: montserrat; font-size: medium; font-weight: 500; padding-top: 0.3em;">
+                        Teknologi Informasi, Universitas Udayana
+                    </p>
+                </div>
+            </div>
+            <div class="element8">
+                <ul>
+                    <li>Organisasi Himpunan Mahasiswa Teknologi Informasi Universitas Udayana, sebagai anggota sie publikasi dan dokumentasi</li>
+                    <li>Kepanitiaan SPORTI 2023, sebagai anggota sie publikasi dan dokumentasi</li>
+                    <li>Kepanitiaan Pemilihan Mahasiswa Berprestasi Teknologi Informasi 2023, sebagai anggota sie publikasi dan dokumentasi</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="display: flex; margin-top: 2em; margin-bottom: 2em;">
+            <div class="element6">
+                <img class="element5" src="./img/camera icon.png" alt="logo kamera">
+                <div>
+                    <p class="element7" style="font-family: poppins; font-size: 1.2em; font-weight: 600;padding-top: 0.3em;">
+                        Publikasi Dan Dokumentasi
+                    </p>
+                    <p class="element7" style="font-family: montserrat; font-size: medium; font-weight: 500; padding-top: 0.3em;">
+                        SMAN 1 Gianyar
+                    </p>
+                </div>
+            </div>
+            <div class="element8">
+                <ul>
+                    <li>Kepanitiaan Pemilihan Jegeg Bagus DOSMAN 2021, sebagai sie publikasi dan dokumentasi</li>
+                    <li>Kepanitiaan <i>yearbook</i> sekolah, sebagai tim kreatif</li>
+                    <li>Kepanitiaan kelulusan sekolah, sebagai sie publikasi dan dokumentasi</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- <details>
+            <summary style=" font-family: poppins; font-size: larger;">Teknologi Informasi Universitas Udayana</summary>
+            <ul style="font-family: montserrat; margin-left: 1em;" type="rounded">
+                <li>Organisasi Himpunan Mahasiswa Teknologi Informasi Universitas Udayana, sebagai anggota sie publikasi dan dokumentasi</li>
+                <li>Kepanitiaan SPORTI 2023, sebagai anggota sie publikasi dan dokumentasi</li>
+                <li>Kepanitiaan Pemilihan Mahasiswa Berprestasi Teknologi Informasi 2023, sebagai anggota sie publikasi dan dokumentasi</li>
+            </ul>
+        </details>
+        
+        <details >
+            <summary style=" font-family: poppins; font-size: larger;">SMAN 1 Gianyar</summary>
+            <ul style="font-family: montserrat; margin-left: 1em;" type="rounded">
+                <li>Kepanitiaan Pemilihan Jegeg Bagus DOSMAN 2021, sebagai sie publikasi dan dokumentasi</li>
+                <li>Kepanitiaan <i>yearbook</i> sekolah, sebagai tim kreatif</li>
+                <li>Kepanitiaan kelulusan sekolah, sebagai sie publikasi dan dokumentasi</li>
+            </ul>
+        </details>
+
+        <details >
+            <summary style=" font-family: poppins; font-size: larger;">SMPN 1 Gianyar</summary>
+            <ul style="font-family: montserrat; margin-left: 1em;" type="rounded">
+                <li>Organisasi Majelis Perwakilan Kelas</li>
+            </ul>
+        </details> -->
+
+    </div>
+
+    <div id="prestasi">
+        <h2 style="font-family: poppins; text-align: left;padding-left: 1em;margin-top: 1.5em;">Achievement</h2>
+        <div style="display: flex; margin-left: 1.5em;">
+            <button onclick="hideShow()" class="buttonportfolio3">Photography</button>
+            <button onclick="hideShow()" class="buttonportfolio3">Videography</button>
+            <button onclick="hideShow()" class="buttonportfolio3">Design</button>
+        </div>
+
+        <div id="prestasifoto">
+            <div style="display: flex; margin-top: 1em; margin-bottom: 3em;">
+                <div class="element6">
+                    <img class="element5" src="./img/trophy icon.png" alt="logo kamera">
+                    <div>
+                        <p class="element7" style="font-family: poppins; font-size: 1.2em; font-weight: 600;padding-top: 0.3em;">
+                            Juara 1
+                        </p>
+                        <p class="element7" style="font-family: montserrat; font-size: medium; font-weight: 500; padding-top: 0.3em;">
+                            Tingkat Nasional
+                        </p>
+                    </div>
+                </div>
+                <div class="element8">
+                    <p>
+                        Juara 1 Kategori Lomba Fotografi Dalam Kegiatan Pekan Historis 2022 Fakultas Ilmu Budaya Universitas Udayana
+                    </p>
+                </div>
+            </div>
+    
+            <div style="display: flex; margin-top: 3em; margin-bottom: 3em;">
+                <div class="element6">
+                    <img class="element5" src="./img/trophy icon.png" alt="logo kamera">
+                    <div>
+                        <p class="element7" style="font-family: poppins; font-size: 1.2em; font-weight: 600;padding-top: 0.3em;">
+                            Juara 2
+                        </p>
+                        <p class="element7" style="font-family: montserrat; font-size: medium; font-weight: 500; padding-top: 0.3em;">
+                            Tingkat Nasional
+                        </p>
+                    </div>
+                </div>
+                <div class="element8">
+                    <p>
+                        Juara 2 Dalam Kegiatan GAS FUN PHOTO Pada Acara Astro 2022 Sekolah Tinggi Teknologi Terpadu Nurul Fikri
+                    </p>
+                </div>
+            </div>
+    
+            <div style="display: flex; margin-top: 3em; margin-bottom: 3em;">
+                <div class="element6">
+                    <img class="element5" src="./img/trophy icon.png" alt="logo kamera">
+                    <div>
+                        <p class="element7" style="font-family: poppins; font-size: 1.2em; font-weight: 600;padding-top: 0.3em;">
+                            Juara 1
+                        </p>
+                        <p class="element7" style="font-family: montserrat; font-size: medium; font-weight: 500; padding-top: 0.3em;">
+                            Tingkat Nasional
+                        </p>
+                    </div>
+                </div>
+                <div class="element8">
+                    <p>
+                        Juara 1 Kategori Lomba Fotografi SMA/K/MA Sederajat VOCATION 2019 Universitas Sebelas Maret
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="prestasivideo" style="display: none;">
+            <div style="display: flex; margin-top: 1em; margin-bottom: 3em;">
+                <div class="element6">
+                    <img class="element5" src="./img/trophy icon.png" alt="logo kamera">
+                    <div>
+                        <p class="element7" style="font-family: poppins; font-size: 1.2em; font-weight: 600;padding-top: 0.3em;">
+                            Juara 1
+                        </p>
+                        <p class="element7" style="font-family: montserrat; font-size: medium; font-weight: 500; padding-top: 0.3em;">
+                            Tingkat Se-Bali dan Nusa Tenggara
+                        </p>
+                    </div>
+                </div>
+                <div class="element8">
+                    <p>
+                        Juara 1 Lomba Film Pendek Edukasi Tingkat SMA/SMK Diadakan Oleh BEM STIKES KESDAM IX/UDAYANA
+                    </p>
+                </div>
+            </div>
+
+            <div style="display: flex; margin-top: 3em; margin-bottom: 3em;">
+                <div class="element6">
+                    <img class="element5" src="./img/trophy icon.png" alt="logo kamera">
+                    <div>
+                        <p class="element7" style="font-family: poppins; font-size: 1.2em; font-weight: 600;padding-top: 0.3em;">
+                            Juara 3
+                        </p>
+                        <p class="element7" style="font-family: montserrat; font-size: medium; font-weight: 500; padding-top: 0.3em;">
+                            Tingkat Provinsi
+                        </p>
+                    </div>
+                </div>
+                <div class="element8">
+                    <p>
+                        Lomba Video Citizen Journalism Economic Journalistic Competition 2019 Fakultas Ekonomi dan Bisnis Universitas Udayana
+                    </p>
+                </div>
+            </div>
+    
+            <div style="display: flex; margin-top: 3em; margin-bottom: 3em;">
+                <div class="element6">
+                    <img class="element5" src="./img/trophy icon.png" alt="logo kamera">
+                    <div>
+                        <p class="element7" style="font-family: poppins; font-size: 1.2em; font-weight: 600;padding-top: 0.3em;">
+                            Juara Favorit
+                        </p>
+                        <p class="element7" style="font-family: montserrat; font-size: medium; font-weight: 500; padding-top: 0.3em;">
+                            Tingkat Kabupaten
+                        </p>
+                    </div>
+                </div>
+                <div class="element8">
+                    <p>
+                        Juara Favorit Movie Competition Bulan Bakti Pemuda 2020
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="prestasidesain" style="display: none;">
+            <p style="padding: 10px 10px; font-size: large; font-weight: 600; margin-left: 1.5em; font-family: poppins; text-align: left;">
+                AS SOON AS POSSIBLE
+            </p>
+        </div>
+        
+        <!-- <div>
+            <div id="prestasifoto">
+                <div style="display: flex;">
+                    <div class="element10">
+                        <p style="font-size: 36px; font-weight: 600;">
+                            Juara 1
+                        </p>
+                        <p>
+                            Lomba Fotografi Dalam Kegiatan <br> Pekan Historis 2022 Tingkat Nasional
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ffffff" fill-opacity="1" d="M0,128L40,149.3C80,171,160,213,240,197.3C320,181,400,107,480,112C560,117,640,203,720,197.3C800,192,880,96,960,80C1040,64,1120,128,1200,133.3C1280,139,1360,85,1400,58.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                        </svg>
+                    </div>
+                    <div class="element10">
+                        <p style="font-size: 36px; font-weight: 600;">
+                            Juara 2
+                        </p>
+                        <p>
+                            Kegiatan GAS FUN PHOTO <br> Pada Acara Astro 2022 Tingkat Nasional
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ffffff" fill-opacity="1" d="M0,128L40,149.3C80,171,160,213,240,197.3C320,181,400,107,480,112C560,117,640,203,720,197.3C800,192,880,96,960,80C1040,64,1120,128,1200,133.3C1280,139,1360,85,1400,58.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                        </svg>
+                    </div>
+                    <div class="element10">
+                        <p style="font-size: 36px; font-weight: 600;">
+                            Juara 1
+                        </p>
+                        <p>
+                            Lomba Fotografi SMA/K/MA Sederajat Tingkat Nasional
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ffffff" fill-opacity="1" d="M0,128L40,149.3C80,171,160,213,240,197.3C320,181,400,107,480,112C560,117,640,203,720,197.3C800,192,880,96,960,80C1040,64,1120,128,1200,133.3C1280,139,1360,85,1400,58.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="prestasivideo" style="display: none;">
+                <div style="display: flex;">
+                    <div class="element10">
+                        <p style="font-size: 36px; font-weight: 600;">
+                            Juara 3
+                        </p>
+                        <p>
+                            Lomba Video Citizen Journalism <br> Economic Journalistic Competition 2019
+                           </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ffffff" fill-opacity="1" d="M0,128L40,149.3C80,171,160,213,240,197.3C320,181,400,107,480,112C560,117,640,203,720,197.3C800,192,880,96,960,80C1040,64,1120,128,1200,133.3C1280,139,1360,85,1400,58.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                        </svg>
+                        </div>
+                    <div class="element10">
+                        <p style="font-size: 36px; font-weight: 600;">
+                            Juara Favorit
+                        </p>
+                        <p>
+                            Movie Competition Bulan Bakti Pemuda 2020
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ffffff" fill-opacity="1" d="M0,128L40,149.3C80,171,160,213,240,197.3C320,181,400,107,480,112C560,117,640,203,720,197.3C800,192,880,96,960,80C1040,64,1120,128,1200,133.3C1280,139,1360,85,1400,58.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- <ul>
+                <li>Juara 1 Kategori Lomba Fotografi Dalam Kegiatan Pekan Historis 2022 Tingkat Nasional</li>
+                <li>Juara 2 Dalam Kegiatan GAS FUN PHOTO Pada Acara Astro 2022 Tingkat Nasional</li>
+                <li>Juara 1 Lomba Fotografi SMA/K/MA Sederajat Tingkat Nasional</li>
+            </ul> -->
+        <!-- <table border="1" cellpadding="10" style="font-family: montserrat;">
+            <thead>
+                <tr>
+                    <th><b>Fotografi</b></th>
+                    <th><b>Videografi</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul style="font-family: montserrat; font-size: small; list-style: none;">
+                            <li>Juara 1 Kategori Lomba Fotografi Dalam Kegiatan Pekan Historis 2022 Tingkat Nasional</li>
+                            <li>Juara 2 Dalam Kegiatan GAS FUN PHOTO Pada Acara Astro 2022 Tingkat Nasional</li>
+                            <li>Juara 1 Lomba Fotografi SMA/K/MA Sederajat Tingkat Nasional</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul style="font-family: montserrat; font-size: small; list-style: none;">
+                            <li>Juara 3 Lomba Video Citizen Journalism Economic Journalistic Competition 2019</li>
+                            <li>Juara Favorit Movie Competition Bulan Bakti Pemuda 2020</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
+    </div>
+
+    <footer id="kontak" style="margin-top: 2em;">
+        <div class="footer4">
+            <div class="footer3">
+                <h3 style="font-family: poppins;font-size:36px;">Contact</h2>
+            </div>
+            <!-- <div class="footer5">
+                <p style="font-family: montserrat;">
+                    Di sini, terdapat menemukan informasi kontak utama yang memungkinkan pengunjung situs <br> untuk menghubungi pemilik situs atau organisasi.
+                    Informasi yang biasanya terdapat di bagian <i>footer</i> <br> ini mencakup alamat email, nomor telepon, instagram dan tautan ke halaman sosial media jika relevan.
+                </p>
+            </div> -->
+        </div>
+            
+        <div class="footer4" style="border: none;">
+            <div class="footer6">
+                <a href="https://www.instagram.com/"><img src="img/Instagram logo putih.png" alt="logo ig" style="width: 30px; margin: 0px 10px 0px 10px;"/></a>
+            </div>
+            <div class="footer6">
+                <p style="font-family: montserrat; text-align: justify; font-weight: 500;">
+                    resan_dy
+                </p>
+            </div>
+                
+            <div style="display: block; margin-top: 1em;">
+                <div class="footer6">
+                    <a href="https://api.whatsapp.com/send?phone=6285239164972"><img src="img/logo putih wa.png" alt="logo wa" style="width: 30px; margin: 0px 10px 0px 10px;"/></a>
+                </div>
+                <div class="footer6">
+                    <p style="font-family: montserrat; text-align: justify; font-weight: 500;">
+                        085239164972
+                    </p>
+                </div>
+            </div>
+            
+            <div style="display: block; margin-top: 1em;padding-bottom: 0.8em;">
+                <div class="footer6" >
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><img src="img/Gmail_Logo_White_512px.png" alt="logo gmail" style="width: 30px; margin: 0px 10px 0px 10px;"/></a>
+                </div>
+                <div class="footer6">
+                    <p style="font-family: montserrat; text-align: justify; font-weight: 500;">
+                        resandyprisadana2323@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="./code.jquery.com_jquery-3.7.1.min.js"></script> -->
+    <script src="./index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,507 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+header{
+    display: block;
+    padding: 15px 10px;
+    line-height: 1.5;
+}
+
+#navbar {
+    list-style: none;
+    background-color:white;
+    color: #000;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#navbar li a{
+    color: black;
+    font-family: montserrat;
+    text-decoration: none;
+}
+
+#navbar.sticky{
+    list-style: none;
+    background-color:#8bc53f;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    transition: 0.5s;
+}
+
+#navbar.sticky li a{
+    color: white;
+    font-family: montserrat;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#navbar.sticky li a:hover{
+    color: #245d53;
+    transition: 0.5s;
+}
+
+.navbar1{
+    color: #000;
+    display:inline-block;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar1:hover {
+    border-bottom: solid 2px #8bc53f;
+    text-decoration: none;
+}
+
+.navbar2{
+    display:block;
+    color:white;
+    background-color:  #245d53;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    float: left;
+}
+
+.navbar2:hover{
+    background-color: #8bc53f;
+    text-decoration: none;
+}
+
+.navbar3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+
+}
+
+.biodata { /*buat nengahin posisi */
+    display: inline-block;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.biodata1 { /*buat nengahin posisi */
+    /* background-image: url(img/portofolio\ background.jpg); */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.element1{
+    margin-top: 10px;
+    background-color: #8bc53f;
+    width: 50%;
+    float: left;
+}
+
+.element2{
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 2em;
+    /* background-color: #245d53; */
+    width: 50%;
+    vertical-align: middle;
+}
+
+.element3 { /*Untuk foto profil*/
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 24%;
+    vertical-align: middle;
+    border-radius: 10px; 
+}
+
+.element4 { /*Untuk nama*/
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.element5 { /*Untuk icon kamera di experience*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items: center; */
+    /* margin-top: 2em; */
+    margin-left: 2em;
+    /* margin-bottom: 1em; */
+    width: 12%;
+    /* vertical-align: middle; */
+    /* background-color: #000; */
+}
+
+.element6 {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    /* background-color: aqua; */
+    /* vertical-align: middle; */
+    overflow: hidden;
+}
+
+.element7 {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 2em; */
+    text-align: left;
+    overflow: hidden;
+    /* color: white;
+    background-color: #245d53; */
+    line-height: 1.5;
+    margin-left: 0.7em;
+    /* vertical-align: middle; */
+}
+
+.element8 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* background-color: aqua; */
+    /* vertical-align: middle; */
+    /* overflow: hidden; */
+    line-height: 1.5;
+    padding-right: 0.5em;
+    font-family: montserrat;
+    font-weight: 500;
+    text-align: left;
+    
+}
+
+.element9 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1em;
+    margin: 1em 1em;
+}
+
+.element10 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 360px;
+    background-color: #8bc53f;
+    color: white;
+    /* background-color: aqua; */
+    /* vertical-align: middle; */
+    /* overflow: hidden; */
+    border-radius: 20px;
+    line-height: 1.5;
+    padding: 10px 0px 0px 0px;
+    font-family: montserrat;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 2em;
+    margin-top: 0.5em;
+}
+
+.element11 {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.element12 {
+    font-family: montserrat;
+    line-height: 1.5;
+    margin-top: 1em;
+    text-align: left;
+    font-weight: 400;
+}
+
+.element13 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonportfoliophoto {
+    width: 12px;;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 1.5px #8bc53f;
+    margin: 0px 5px;
+}
+
+.buttonportfoliophoto:hover {
+    background-color: #245d53;
+    border: solid 1px #245d53;
+    transition: 0.5s;
+}
+
+.buttonportfoliophoto:focus {
+    background-color: #245d53;
+    border: solid 1px #245d53;
+}
+
+h2{
+    color: #000;
+    padding-top: 0.5em;
+    font-size: 36px;
+}
+
+.buttonportfolio {
+    text-transform: uppercase;
+    font-family: poppins;
+    color: black;
+    text-align: center;
+    border: none;    
+    font-size: large;
+    font-weight: 600;
+    background-color: white;
+    border: solid 2px #8bc53f;
+    border-radius: 10px;
+    display: inline;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+}
+
+.buttonportfolio:hover{
+    background-color: #8bc53f;
+    color: white;
+}
+
+.buttonportfolio:focus {
+    background-color: #8bc53f;
+    color: white;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: white;
+}
+
+.buttonportfolio2 { /*view more*/
+    text-transform: uppercase;
+    font-family: poppins;
+    color: white;
+    text-align: center;
+    border: none;    
+    font-size: small;
+    font-weight: 600;
+    background-color: #8bc53f;
+    border: solid 2px #8bc53f;
+    border-radius: 10px;
+    display: block;
+    padding: 5px 5px;
+    margin-top: 1em;
+    line-height: 2.5em;
+    text-decoration: none;
+    float: left;
+}
+
+.buttonportfolio2:hover {
+    color: #245d53;
+}
+
+.buttonportfolio3 {
+    text-transform: uppercase;
+    font-family: poppins;
+    color: black;
+    text-align: center;
+    border: none;    
+    font-size: small;
+    font-weight: 600;
+    background-color: white;
+    border: solid 2px #8bc53f;
+    border-radius: 100px;
+    display: inline;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+}
+
+.buttonportfolio3:hover{
+    background-color: #8bc53f;
+    color: white;
+}
+
+.buttonportfolio3:focus {
+    background-color: #8bc53f;
+    color: white;
+}
+
+.buttonportfolio4 { /*hire me*/
+    text-transform: uppercase;
+    font-family: poppins;
+    color: white;
+    text-align: center;
+    border: none;    
+    font-size: medium;
+    font-weight: 600;
+    background-color: #8bc53f;
+    border: solid 2px #8bc53f;
+    border-radius: 10px;
+    display: block;
+    padding: 3.5px 5px;
+    margin-top: 1em;
+    line-height: 2.5em;
+    text-decoration: none;
+    float: left;
+    width: 100px;
+    word-spacing: normal;
+    letter-spacing: 2px;
+}
+
+details{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+table{
+    margin: 0 auto;    
+}
+
+tbody{
+    text-align: justify;
+    line-height: 2;
+}
+
+.footer3 { /*header contact*/
+    color: white;
+    display: inline-block;
+    background-color: #8bc53f;
+    text-align: justify;
+    padding: 0.5em 1em 1em 1em;
+    vertical-align: middle;
+}
+
+.footer4 { /*blok antara heading kontak dan deskripsi kontak*/
+    display:block;
+    background-color: #8bc53f;
+    padding-top: 1em;
+    padding-left: 1em;
+    border-bottom: solid 3px white;
+    text-align: left;
+}
+
+.footer5 { /*deskripsi singkat untuk kontak*/
+    color: white;
+    display: inline-block;
+    background-color: #8bc53f;
+    text-align: left;
+    padding: 0.1em 1em 1em 20em;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.footer6 { /*logo dan informasi untuk kontak*/
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .fotoportofolio {
+
+}
+
+.videoportofolio {
+
+}
+
+.desainportofolio {
+
+} */
+
+
+
+
+/* .fotoportofolio2 { /*Tampilan pada saat tidak di klik atau tidak pada halamannya*/
+
+
+
+/* nav {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #ffffff;
+    line-height: 1.5;
+    padding: 1rem;
+} */
+
+/*
+nav::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: #8bc53f;
+}
+
+nav:hover{
+    background-color: #ffffff;
+}
+
+nav:hover::after{
+    transform: scaleX(1);
+    trans
+} */
+
+/* .fotoportofolio{
+    justify-content: space-evenly;
+    
+}
+
+.tabel1{
+    padding: 1rem;
+}
+
+p {
+    line-height: 1.5;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.footer {
+    -webkit-text-fill-color: black;
+    text-indent: 30px;
+    line-height: 3;
+    background-color: #f5f3df;
+}
+.footerhead {
+    -webkit-text-fill-color: black;
+    text-indent: 30px;
+    line-height: 3;
+} */
+
